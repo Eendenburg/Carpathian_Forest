@@ -1,5 +1,7 @@
 {
-  "item.carpathian_forest.appetite": "Appetite",
-  "item.carpathian_forest.appetite_dust": "Appetite Dust",
-  "creativetab.carpathian_forest_tab": "Carpathian Forest"
+  "item.carpathian_forest.apatite": "Apatite",
+  "item.carpathian_forest.apatite_dust": "Apatite Dust",
+  "creativetab.carpathian_forest_tab": "Carpathian Forest",
+
+  "block.carpathian_forest.apatite_block": "Apatite Block",
 }

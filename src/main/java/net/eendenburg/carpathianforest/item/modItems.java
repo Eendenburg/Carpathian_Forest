@@ -13,9 +13,9 @@ public class modItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems("carpathian_forest");
 
-    public static final DeferredItem<Item> APPETITE = ITEMS.register("appetite",
+    public static final DeferredItem<Item> APATITE = ITEMS.register("apatite",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> APPETITE_DUST = ITEMS.register("appetite_dust",
+    public static final DeferredItem<Item> APATITE_DUST = ITEMS.register("apatite_dust",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
