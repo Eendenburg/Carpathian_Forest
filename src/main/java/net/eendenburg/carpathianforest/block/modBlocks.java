@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.neoforged.bus.EventBus;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.client.event.RenderHighlightEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -27,17 +28,18 @@ public class modBlocks {
 
 
     public static DeferredBlock<Block> registerBlock(
-            String name, Block block) {
-        DeferredBlock<Block> blockReg = BLOCKS.register(name, () -> block);
+            String name, Supplier<Block> block) {
+        DeferredBlock<Block> blockReg = BLOCKS.register(name, block);
+        modItems.ITEMS.register(name, () -> new BlockItem(blockReg.get(), new Item.Properties()));
+        return blockReg;
+    }
 
-    }
-    )
-    }
+        public static void register(IEventBus eventBus) {
+            BLOCKS.register(eventBus);
+        }
 
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
-    }
-}
+
+};
 
 
 
