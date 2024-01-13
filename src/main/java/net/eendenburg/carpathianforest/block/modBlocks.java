@@ -10,10 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.EventBus;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.client.event.RenderHighlightEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import net.neoforged.neoforge.registries.*;
 
 import java.util.function.Supplier;
 
@@ -22,17 +19,18 @@ public class modBlocks {
             DeferredRegister.createBlocks(CarpathianForest.MOD_ID);
 
 
-    public static final DeferredBlock<Block> APATITE_BLOCK = BLOCKS.register("apatite_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+//registering block as an Item
+public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+    DeferredBlock<T> ret = BLOCKS.register(name, block);
+    modItems.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties()));
+    return ret;
+}
 
 
+// registering blocks
+    public static final DeferredBlock<Block> APATITE_BLOCK = registerBlock("apatite_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
 
-    public static DeferredBlock<Block> registerBlock(
-            String name, Supplier<Block> block) {
-        DeferredBlock<Block> blockReg = BLOCKS.register(name, block);
-        modItems.ITEMS.register(name, () -> new BlockItem(blockReg.get(), new Item.Properties()));
-        return blockReg;
-    }
 
         public static void register(IEventBus eventBus) {
             BLOCKS.register(eventBus);

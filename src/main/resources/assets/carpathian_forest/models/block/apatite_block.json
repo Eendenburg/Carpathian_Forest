@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "carpathianforest:block/apatite_block"
+    "all": "carpathian_forest:block/apatite_block"
   }
 }
