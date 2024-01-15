@@ -39,9 +39,9 @@ public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supp
             builder.add(FACING);
     }
 
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
-    }
+   // public BlockState getStateForPlacement(BlockPlaceContext context) {
+    //        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+   // }
 
 
 
@@ -51,6 +51,8 @@ public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supp
 
     public static final DeferredBlock<Block> BLUEPRINT_STATION = registerBlock("blueprint_station",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> APATITE_ORE = registerBlock("apatite_ore",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
 
         public static void register(IEventBus eventBus) {
             BLOCKS.register(eventBus);

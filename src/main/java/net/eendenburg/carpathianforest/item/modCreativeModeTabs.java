@@ -27,6 +27,7 @@ public class modCreativeModeTabs {
                         pOutput.accept(modItems.APATITE_DUST);
                         pOutput.accept(modBlocks.APATITE_BLOCK);
                         pOutput.accept(modBlocks.BLUEPRINT_STATION);
+                        pOutput.accept(modBlocks.APATITE_ORE);
                     }))
                     .build());
 

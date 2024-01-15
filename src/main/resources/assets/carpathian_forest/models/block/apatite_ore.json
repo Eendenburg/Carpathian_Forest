@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "carpathian_forest:block/apatite_ore"
+  }
+}
