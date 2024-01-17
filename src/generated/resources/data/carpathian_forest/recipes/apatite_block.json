@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "apatite",
+  "ingredients": [
+    {
+      "item": "carpathian_forest:apatite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "carpathian_forest:apatite"
+  }
+}

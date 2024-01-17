@@ -1,8 +1,0 @@
-{
-  "parent": "block/orientable",
-  "textures": {
-    "top": "blocks/blueprint_station_top",
-    "front": "blocks/blueprint_station_front",
-    "side": "blocks/blueprint_station_side"
-  }
-}

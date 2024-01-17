@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "apatite",
+  "key": {
+    "#": {
+      "item": "carpathian_forest:apatite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "carpathian_forest:apatite_block"
+  }
+}
