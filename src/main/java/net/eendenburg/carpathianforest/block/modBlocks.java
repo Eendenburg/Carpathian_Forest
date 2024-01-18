@@ -7,9 +7,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -57,7 +55,14 @@ public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supp
     public static final DeferredBlock<Block> APATITE_ORE = registerBlock("apatite_ore",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
 
-        public static void register(IEventBus eventBus) {
+    public static final DeferredBlock<Block> APATITE_STAIRS = registerBlock("apatite_stairs",
+            () -> new StairBlock(() -> modBlocks.APATITE_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_STAIRS).sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> APATITE_SLAB = registerBlock("apatite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_STAIRS).sound(SoundType.AMETHYST)));
+
+
+    public static void register(IEventBus eventBus) {
             BLOCKS.register(eventBus);
         }
 

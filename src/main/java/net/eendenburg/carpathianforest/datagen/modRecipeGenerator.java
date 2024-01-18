@@ -12,7 +12,10 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -37,6 +40,8 @@ public class modRecipeGenerator extends RecipeProvider implements IConditionBuil
                 "carpathian_forest:apatite", "apatite","carpathian_forest:apatite_block", "apatite");
         oreSmelting(pWriter, APATITE_SMELTABLES, RecipeCategory.MISC, modItems.APATITE.get(), 0.25f, 200, "apatite");
         oreBlasting(pWriter, APATITE_SMELTABLES, RecipeCategory.MISC, modItems.APATITE.get(), 0.25f, 100, "apatite");
+        slab(pWriter, RecipeCategory.MISC, modBlocks.APATITE_SLAB, modBlocks.APATITE_BLOCK);
+
     }
 
     protected static void oreSmelting(RecipeOutput pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

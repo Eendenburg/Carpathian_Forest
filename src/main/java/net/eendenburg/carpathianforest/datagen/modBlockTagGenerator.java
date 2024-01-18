@@ -26,12 +26,18 @@ public class modBlockTagGenerator extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(modBlocks.APATITE_BLOCK.get(),
                     modBlocks.APATITE_ORE.get(),
-                    modBlocks.BLUEPRINT_STATION.get());
+                    modBlocks.BLUEPRINT_STATION.get(),
+                    modBlocks.APATITE_SLAB.get(),
+                    modBlocks.APATITE_STAIRS.get()
+                );
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(modBlocks.APATITE_ORE.get(),
                         modBlocks.BLUEPRINT_STATION.get(),
-                        modBlocks.APATITE_BLOCK.get());
+                        modBlocks.APATITE_BLOCK.get(),
+                        modBlocks.APATITE_SLAB.get(),
+                        modBlocks.APATITE_STAIRS.get()
+                );
 
 
     }

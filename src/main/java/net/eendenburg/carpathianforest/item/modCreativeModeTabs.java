@@ -28,6 +28,8 @@ public class modCreativeModeTabs {
                         pOutput.accept(modBlocks.APATITE_BLOCK);
                         pOutput.accept(modBlocks.BLUEPRINT_STATION);
                         pOutput.accept(modBlocks.APATITE_ORE);
+                        pOutput.accept(modBlocks.APATITE_SLAB);
+                        pOutput.accept(modBlocks.APATITE_STAIRS);
                     }))
                     .build());
 

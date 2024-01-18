@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "carpathian_forest:block/apatite_block",
+    "side": "carpathian_forest:block/apatite_block",
+    "top": "carpathian_forest:block/apatite_block"
+  }
+}

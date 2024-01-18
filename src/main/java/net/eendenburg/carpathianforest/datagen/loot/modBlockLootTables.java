@@ -25,9 +25,13 @@ public class modBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(modBlocks.APATITE_BLOCK.get());
         dropSelf(modBlocks.BLUEPRINT_STATION.get());
+        dropSelf(modBlocks.APATITE_STAIRS.get());
 
         add(modBlocks.APATITE_ORE.get(),
                 block -> createOreDrop(modBlocks.APATITE_ORE.get(), modItems.APATITE.get()));
+        add(modBlocks.APATITE_SLAB.get(),
+                block -> createSlabItemTable(modBlocks.APATITE_SLAB.get()));
+
     }
 
     @Override

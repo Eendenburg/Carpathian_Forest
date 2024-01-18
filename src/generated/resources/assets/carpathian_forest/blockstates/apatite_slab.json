@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "carpathian_forest:block/apatite_slab"
+    },
+    "type=double": {
+      "model": "carpathian_forest:block/apatite_block"
+    },
+    "type=top": {
+      "model": "carpathian_forest:block/apatite_slab_top"
+    }
+  }
+}
