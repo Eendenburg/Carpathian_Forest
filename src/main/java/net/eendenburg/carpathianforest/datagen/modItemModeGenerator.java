@@ -21,12 +21,20 @@ public class modItemModeGenerator extends ItemModelProvider {
         simpleItem(modItems.APATITE);
         simpleItem(modItems.APATITE_DUST);
 
+        handheldItem(modItems.CARPATHIAN_HAMMER_MK1);
+
     }
 
     private ItemModelBuilder simpleItem(DeferredItem<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(CarpathianForest.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(CarpathianForest.MOD_ID,"item/" + item.getId().getPath()));
     }
 
 }

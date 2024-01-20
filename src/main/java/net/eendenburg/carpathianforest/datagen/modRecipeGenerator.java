@@ -41,8 +41,12 @@ public class modRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreSmelting(pWriter, APATITE_SMELTABLES, RecipeCategory.MISC, modItems.APATITE.get(), 0.25f, 200, "apatite");
         oreBlasting(pWriter, APATITE_SMELTABLES, RecipeCategory.MISC, modItems.APATITE.get(), 0.25f, 100, "apatite");
         slab(pWriter, RecipeCategory.MISC, modBlocks.APATITE_SLAB, modBlocks.APATITE_BLOCK);
+        stairBuilder(modBlocks.APATITE_STAIRS, Ingredient.of(modBlocks.APATITE_BLOCK)).group("apatite").unlockedBy("apatite", has(modBlocks.APATITE_BLOCK)).save(pWriter);
+
+
 
     }
+
 
     protected static void oreSmelting(RecipeOutput pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");

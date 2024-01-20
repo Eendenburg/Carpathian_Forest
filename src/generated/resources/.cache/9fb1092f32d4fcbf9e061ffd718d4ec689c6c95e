@@ -1,4 +1,5 @@
-// 1.20.4	2024-01-18T19:24:02.6890546	Recipes
+// 1.20.4	2024-01-20T13:05:28.3795348	Recipes
+3dc5949fbaf090b6f73d348855a6ee4e8f3cd71c data/carpathian_forest/advancements/recipes/building_blocks/apatite_stairs.json
 bb671abf0e13386e4dc33ca3921c26a1b31315d8 data/carpathian_forest/advancements/recipes/misc/apatite.json
 2be3f4b6acee65e6fc1084feed8064f3c8dd7d1f data/carpathian_forest/advancements/recipes/misc/apatite_block.json
 9b7164ccc321de6bd008ca7a614c110bbdf26763 data/carpathian_forest/advancements/recipes/misc/apatite_from_blasting_apatite.json
@@ -13,3 +14,4 @@ ad65f11c3483f56da0e7c51de38040fa9c034929 data/carpathian_forest/recipes/apatite_
 acb5d05f5be17e2a7554da4aac423d4f1ec52d7d data/carpathian_forest/recipes/apatite_from_smelting_apatite.json
 16a660864e864be83721afb7d0e3f0ec72d3b74b data/carpathian_forest/recipes/apatite_from_smelting_apatite_ore.json
 6c59f60c86a5a1c09f0e301419dc482edd7ab3f7 data/carpathian_forest/recipes/apatite_slab.json
+f5b60289342773023e9f95f36e22084728e90fd0 data/carpathian_forest/recipes/apatite_stairs.json

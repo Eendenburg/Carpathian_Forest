@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/iron_block",
+    "east": "carpathian_forest:block/blueprint_station_side",
+    "north": "carpathian_forest:block/blueprint_station_front",
+    "particle": "carpathian_forest:block/blueprint_station_front",
+    "south": "carpathian_forest:block/blueprint_station_side",
+    "up": "carpathian_forest:block/blueprint_station_top",
+    "west": "carpathian_forest:block/blueprint_station_front"
+  }
+}

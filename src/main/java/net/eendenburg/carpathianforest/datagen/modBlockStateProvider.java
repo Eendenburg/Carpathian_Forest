@@ -4,9 +4,8 @@ import net.eendenburg.carpathianforest.CarpathianForest;
 import net.eendenburg.carpathianforest.block.modBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -28,7 +27,7 @@ public class modBlockStateProvider extends BlockStateProvider {
 
         blockItem(modBlocks.APATITE_STAIRS);
         blockItem(modBlocks.APATITE_SLAB);
-
+        simpleBlockWithItem(modBlocks.BLUEPRINT_STATION.get(), new ModelFile.UncheckedModelFile("carpathian_forest:block/blueprint_station"));
 
     }
 
