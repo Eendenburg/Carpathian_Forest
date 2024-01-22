@@ -30,6 +30,7 @@ public class modCreativeModeTabs {
                         pOutput.accept(modBlocks.APATITE_ORE);
                         pOutput.accept(modBlocks.APATITE_SLAB);
                         pOutput.accept(modBlocks.APATITE_STAIRS);
+                        pOutput.accept(modItems.CARPATHIAN_HAMMER_MK1);
                     }))
                     .build());
 
