@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.eendenburg.carpathianforest.block.modBlocks;
 import net.eendenburg.carpathianforest.item.modCreativeModeTabs;
 import net.eendenburg.carpathianforest.item.modItems;
+import net.eendenburg.carpathianforest.villager.modVillagers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -52,6 +53,8 @@ public class CarpathianForest
 
         modBlocks.register(modEventBus);
         modItems.register(modEventBus);
+
+        modVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
