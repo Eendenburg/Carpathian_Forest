@@ -27,8 +27,7 @@ public class modBlockStateProvider extends BlockStateProvider {
 
         blockItem(modBlocks.APATITE_STAIRS);
         blockItem(modBlocks.APATITE_SLAB);
-        simpleBlockWithItem(modBlocks.BLUEPRINT_STATION.get(), new ModelFile.UncheckedModelFile("carpathian_forest:block/blueprint_station"));
-
+        blockItem(modBlocks.BLUEPRINT_STATION);
     }
 
     private void blockItem(DeferredBlock<Block> blockRegistryObject) {
