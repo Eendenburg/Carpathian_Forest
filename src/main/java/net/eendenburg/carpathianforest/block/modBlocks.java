@@ -34,17 +34,6 @@ public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supp
     return ret;
 }
 
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-            builder.add(FACING);
-    }
-
-   // public BlockState getStateForPlacement(BlockPlaceContext context) {
-    //        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
-   // }
-
-
 
 // registering blocks
     public static final DeferredBlock<Block> APATITE_BLOCK = registerBlock("apatite_block",
